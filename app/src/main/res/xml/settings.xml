@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Paramètres Généraux"
+        android:key="general_settings">
+        <CheckBoxPreference
+            android:key="app_dev_mode"
+            android:title="Mode Développeur"
+            android:summary="Activer/Désactiver le mode développeur"
+            android:defaultValue="true"/>
+
+        <EditTextPreference
+            android:key="api_secret"
+            android:title="API Secret"
+            android:summary="Spécifier l'access API"
+            android:dialogTitle="@string/app_name"
+            android:dialogMessage="Entrer le code secret de l'API"
+            android:negativeButtonText="ANNULER"
+            android:positiveButtonText="OK"
+            android:defaultValue="0000"
+            android:inputType="textPassword"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

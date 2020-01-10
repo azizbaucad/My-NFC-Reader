@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#34495e </color>
+    <color name="colorPrimaryDark">#34495e </color>
+    <color name="colorAccent">#341f97</color>
+    <color name="foreground1">#CC576574 </color>
+    <color name="venteReussir">#009432 </color>
+    <color name="venteEchec">#EA2027</color>
+    <color name="rougebouton">#576574</color>
+    <color name="colorMessag">#7f8c8d</color>
+    <color name="colorTextButton">#ffffff</color>
+    <color name="colorewihite">#ffffff</color>
+</resources>
