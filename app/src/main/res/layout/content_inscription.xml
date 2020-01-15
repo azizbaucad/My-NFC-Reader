@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorewihite"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.inspiron15.my_nfc_reader.EnrollementActivity"
+    tools:context=".EnrollementActivity"
     tools:showIn="@layout/activity_inscription">
 
     <ScrollView
@@ -27,115 +28,121 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
                     <EditText android:id="@+id/idTagTxtinscrip"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_nfc_black_24dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:inputType="number"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="ID_TAG" />
-                </android.support.design.widget.TextInputLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.2"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp">
+
                         <EditText android:id="@+id/numCarteEtuTxtinscrip"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_filter_1_black_24dp"
+                            android:layout_weight="0.2"
+                            android:layout_marginTop="8dp"
+                            android:drawablePadding="10dp"
+
+                            android:layout_marginBottom="8dp"
                             android:inputType="textCapCharacters"
                             android:hint="NUMERO CARTE ETUDIANT" />
-                    </android.support.design.widget.TextInputLayout>
                     <Button
-                        android:layout_width="match_parent"
+                        android:layout_width="270dp"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_bouton"
+                        android:background="@drawable/rounded_button"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="0.8"
                         android:drawableRight="@android:drawable/ic_menu_search"
+                        android:drawablePadding="10dp"
                         android:id="@+id/searchBnt"
                         android:layout_gravity="center_horizontal" />
+                    <!--android.support.design.widget.FloatingActionButton
+                        android:id="@+id/searchBnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:layout_margin="16dp" /-->
                 </LinearLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp">
+
                     <EditText android:id="@+id/prenomEtudiantTxtinscrip"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_marginBottom="8dp"
                         android:inputType="textCapWords"
                         android:hint="PRENOM" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp">
+
                     <EditText android:id="@+id/nonEtudiantTxtinscrip"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="8dp"
+
+                        android:layout_marginBottom="8dp"
                         android:inputType="textCapCharacters"
                         android:hint="NOM" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp">
+
                     <EditText android:id="@+id/numTelTxtinscrip"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:drawablePadding="10dp"
+
                         android:inputType="number"
                         android:maxLength="9"
                         android:hint="TELEPHONE" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp">
+
                     <EditText android:id="@+id/emailTxtinscrip"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_email_black_24dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:inputType="textEmailAddress"
                         android:hint="Email" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp">
+
                     <EditText android:id="@+id/etablisementTx"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_school_black_24dp"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_marginBottom="8dp"
                         android:inputType="textCapCharacters"
                         android:hint="@string/secture_activite" />
-                </android.support.design.widget.TextInputLayout>
-                   <!--
-                   <Spinner android:id="@+id/etablisementTx"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
-                        android:prompt="@string/secture_activite" />
-                   -->
+                <!--
+                <Spinner android:id="@+id/etablisementTx"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="16dp"
+                     android:prompt="@string/secture_activite" />
+                -->
             </LinearLayout>
 
             <LinearLayout
@@ -143,12 +150,16 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="210dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_bouton"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
-                    android:text="Enroler"
+                    android:background="@drawable/rounded_button"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="80dp"
+                    android:elevation="2dp"
+                    android:translationZ="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="enroler"
+                    android:textColor="@android:color/white"
                     android:id="@+id/inscriptionBnt"
                     android:layout_gravity="center_horizontal" />
             </LinearLayout>

@@ -1,13 +1,13 @@
 <resources>
-<string name="app_name">COUD</string>
-<string name="title_activity_nfctag">NFCTagActivity</string>
-<string name="title_activity_nfcins">NFCINSTActivity</string>
-<string name="title_activity_main">MainActivity</string>
-<string name="title_activity_fromcfg">FromnfcActivity</string>
-<string name="title_activity_enrolemen">EnrollementActivity</string>
-<string name="approachCardTxt">Veuiller approcher votre carte SVP!</string>
-<string name="approachCardInscription">Inscription</string>
-<string name="title_activity_tech">TechActivity</string>
-<string name="bt_connextion">se connecter</string>
-<string name="secture_activite">ETABLISSEMENT</string>
+    <string name="app_name">COUD</string>
+    <string name="title_activity_nfctag">NFCTagActivity</string>
+    <string name="title_activity_nfcins">NFCINSTActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_fromcfg">FromnfcActivity</string>
+    <string name="title_activity_enrolemen">EnrollementActivity</string>
+    <string name="approachCardTxt">Veuillez placer la carte derrière l\'appareil</string>
+    <string name="approachCardInscription">Inscription</string>
+    <string name="title_activity_tech">TechActivity</string>
+    <string name="bt_connextion">se connecter</string>
+    <string name="secture_activite">ETABLISSEMENT</string>
 </resources>

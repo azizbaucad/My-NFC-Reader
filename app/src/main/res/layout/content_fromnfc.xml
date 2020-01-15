@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.inspiron15.my_nfc_reader.FromnfcActivity"
-    tools:showIn="@layout/activity_fromnfc">
+    tools:context=".FromnfcActivity"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,128 +26,134 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="66dp"
+                    android:text="Informations étudiant"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
                     <EditText android:id="@+id/idTagTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_nfc_black_24dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
                         android:inputType="number"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="ID_TAG" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
+
                     <EditText android:id="@+id/nonEtudiantTxt"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+
+                        android:layout_marginBottom="8dp"
+                        android:theme="@style/TextLabel"
                         android:inputType="number"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="NOM" />
-                </android.support.design.widget.TextInputLayout>
 
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
+
                     <EditText android:id="@+id/prenomEtudiantTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:drawablePadding="10dp"
+
                         android:inputType="number"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:theme="@style/TextLabel"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="PRENOM" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
                     <EditText android:id="@+id/numeroTxt"
                         android:layout_width="match_parent"
+                        android:drawableStart="@drawable/ic_local_phone_black_24dp"
+                        android:drawablePadding="10dp"
+
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:theme="@style/TextLabel"
                         android:inputType="number"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="TELEPHONE" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
+
                     <EditText android:id="@+id/accountTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:drawableStart="@drawable/ic_school_black_24dp"
+                        android:drawablePadding="10dp"
+
+                        android:theme="@style/TextLabel"
                         android:inputType="number"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="ETABLISSEMENT " />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
+
                     <EditText android:id="@+id/montantTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_call_to_action_black_24dp"
+                        android:layout_marginBottom="8dp"
+                        android:theme="@style/TextLabel"
+                        android:drawablePadding="10dp"
+
                         android:inputType="number"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="MONTANT" />
-                </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
+
                     <EditText android:id="@+id/soldetTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:focusable="false"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_branding_watermark_black_24dp"
+                        android:layout_marginBottom="8dp"
+                        android:drawablePadding="10dp"
+
+                        android:theme="@style/TextLabel"
                         android:focusableInTouchMode="false"
                         android:hint="SOLDE" />
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:theme="@style/TextLabel">
+*
                     <EditText android:id="@+id/amountnfcTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_filter_1_black_24dp"
+                        android:layout_marginBottom="8dp"
+                        android:drawablePadding="10dp"
+
+                        android:theme="@style/TextLabel"
                         android:inputType="numberDecimal"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="NUMERO CARTE ETUDIANT" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+*            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -164,18 +170,26 @@
                     android:layout_gravity="center_horizontal" />
                     -->
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="210dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_bouton"
-                    android:layout_marginLeft="10dp"
-                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="85dp"
+                    android:elevation="2dp"
+                    android:translationZ="10dp"
+                    android:stateListAnimator="@null"
                     android:text="Suivant"
+                    android:textColor="@android:color/white"
+                    android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+
+
                     android:id="@+id/orderBtn"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    />
             </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="0dp"
-    tools:context="com.example.inspiron15.my_nfc_reader.NFCINSTActivity">
+    tools:context=".NFCINSTActivity">
     <TextView
         android:id="@+id/promptTextInscription"
         android:layout_width="wrap_content"
