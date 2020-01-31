@@ -53,7 +53,6 @@
                             android:layout_weight="0.2"
                             android:layout_marginTop="8dp"
                             android:drawablePadding="10dp"
-
                             android:layout_marginBottom="8dp"
                             android:inputType="textCapCharacters"
                             android:hint="NUMERO CARTE ETUDIANT" />
@@ -75,7 +74,6 @@
                         android:src="@drawable/ic_search_black_24dp"
                         android:layout_margin="16dp" /-->
                 </LinearLayout>
-
 
                     <EditText android:id="@+id/prenomEtudiantTxtinscrip"
                         android:layout_width="match_parent"
@@ -125,7 +123,6 @@
                         android:inputType="textEmailAddress"
                         android:hint="Email" />
 
-
                     <EditText android:id="@+id/etablisementTx"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -136,13 +133,7 @@
                         android:layout_marginBottom="8dp"
                         android:inputType="textCapCharacters"
                         android:hint="@string/secture_activite" />
-                <!--
-                <Spinner android:id="@+id/etablisementTx"
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                     android:layout_marginBottom="16dp"
-                     android:prompt="@string/secture_activite" />
-                -->
+
             </LinearLayout>
 
             <LinearLayout
