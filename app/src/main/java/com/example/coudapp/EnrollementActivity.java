@@ -65,7 +65,7 @@ public class EnrollementActivity extends AppCompatActivity implements View.OnCli
     private Button searchBtn;
     private long save_id = 0;
     private ProgressDialog prgDialog;
-    String etablissementNom[] = { "ETABLISSEMENT","FASTEF","ENSEPT","ESEA","ESP"};
+    String etablissementNom[] = {"ETABLISSEMENT","FASTEF","ENSEPT","ESEA","ESP"};
     ArrayAdapter<String> adapterEtablissementNom;
 
     @SuppressLint("ResourceAsColor")

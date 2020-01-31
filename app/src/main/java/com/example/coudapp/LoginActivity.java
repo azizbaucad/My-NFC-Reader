@@ -51,7 +51,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private ProgressDialog prgDialog;
     AlertDialog.Builder builder;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +65,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         passwordText= (EditText) findViewById(R.id.passworOubTxt);
         bnt_con=(Button) findViewById(R.id.loginOublBtn);
         bnt_con.setOnClickListener(this);
-        builder =new AlertDialog.Builder(LoginActivity.this);
+        builder = new AlertDialog.Builder(LoginActivity.this);
         prgDialog = new ProgressDialog(this);
         this.prgDialog.setTitle("Connexion");
         this.prgDialog.setMessage("Veuillez patienter !!! ...");
@@ -86,10 +85,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         // ?username=786666666&password=passer";
         Log.e("logurlllllllllllll",url);
         Log.e("phonerestooooo",telephone);
-
         final JSONObject jsonobject = new JSONObject();
         try {
-
             jsonobject.put(KEY_MOT_DE_PASSE,getMotedepasse);
             jsonobject.put(KEY_EMAIL,getEmail);
         }catch (JSONException e) {
@@ -112,11 +109,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 ((ImageView) dlgView.findViewById(R.id.messageImage)).setImageResource(R.drawable.error);
                                 ((TextView) dlgView.findViewById(R.id.messageTitle)).setText("Erreur!");
                                 ((TextView) dlgView.findViewById(R.id.messageContent)).setText("Login ou mot de passe incorrect");
-                                DialogHelper.createCustomDialog(LoginActivity.this, dlgView, "OK", null, new DialogInterface.OnClickListener() {
+                                 DialogHelper.createCustomDialog(LoginActivity.this, dlgView, "OK", null, new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         dialog.dismiss();
-
                                         //$  finish();
                                     }
                                 }, null).show();
@@ -288,4 +284,4 @@ public void onClick(View v) {
         }
 
         }
-        }
+}

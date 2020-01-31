@@ -350,7 +350,7 @@ public class FromnfcActivity extends AppCompatActivity {
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-                                //scrollView.setBackgroundColor(R.color.venteReussir);
+                                //scrollView.setBackgro undColor(R.color.venteReussir);
                                 String msg1 = response.getString("ResponseMessage");
                                 View dlgView = DialogHelper.getInflatedView(FromnfcActivity.this, R.layout.dialog_message);
                                 ((ImageView) dlgView.findViewById(R.id.messageImage)).setImageResource(R.drawable.tick);

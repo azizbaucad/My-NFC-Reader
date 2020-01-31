@@ -82,7 +82,7 @@ public class NFCINSTActivity extends AppCompatActivity implements NFCManager.Tag
                 NFCINSTActivity.this.setResult(NFCINSTActivity.READ_REQUEST_CODE, intent);
                 NFCINSTActivity.this.finish();
             }
-        }, 100);
+        }, 1);
     }
 
     @Override
@@ -97,7 +97,7 @@ public class NFCINSTActivity extends AppCompatActivity implements NFCManager.Tag
                 NFCINSTActivity.this.setResult(NFCINSTActivity.WRITE_REQUEST_CODE, intent);
                 NFCINSTActivity.this.finish();
             }
-        }, 100);
+        }, 1);
     }
 
     @Override

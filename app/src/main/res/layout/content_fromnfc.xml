@@ -37,6 +37,12 @@
                     android:textSize="20dp"
                     android:textStyle="bold"
                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID TAG"
+                    >
+                </TextView>
                     <EditText android:id="@+id/idTagTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -50,7 +56,12 @@
                         android:focusableInTouchMode="false"
                         android:hint="ID_TAG" />
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOM"
+                    >
+                </TextView>
                     <EditText android:id="@+id/nonEtudiantTxt"
                         android:drawableStart="@drawable/ic_person_black_24dp"
                         android:layout_width="match_parent"
@@ -66,7 +77,12 @@
                         android:hint="NOM" />
 
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRENOM"
+                    >
+                </TextView>
                     <EditText android:id="@+id/prenomEtudiantTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -80,7 +96,12 @@
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="PRENOM" />
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TELPHONE"
+                    >
+                </TextView>
                     <EditText android:id="@+id/numeroTxt"
                         android:layout_width="match_parent"
                         android:drawableStart="@drawable/ic_local_phone_black_24dp"
@@ -95,7 +116,12 @@
                         android:focusableInTouchMode="false"
                         android:hint="TELEPHONE" />
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ETABLISSEMENT"
+                    >
+                </TextView>
                     <EditText android:id="@+id/accountTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -110,7 +136,12 @@
                         android:focusableInTouchMode="false"
                         android:hint="ETABLISSEMENT " />
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MONTANT"
+                    >
+                </TextView>
                     <EditText android:id="@+id/montantTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -125,7 +156,12 @@
                         android:focusableInTouchMode="false"
                         android:hint="MONTANT" />
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOLDE"
+                    >
+                </TextView>
                     <EditText android:id="@+id/soldetTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -139,7 +175,12 @@
                         android:theme="@style/TextLabel"
                         android:focusableInTouchMode="false"
                         android:hint="SOLDE" />
-*
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NUMERO CARTE ETUDIANT"
+                    >
+                </TextView>
                     <EditText android:id="@+id/amountnfcTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -153,7 +194,7 @@
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:hint="NUMERO CARTE ETUDIANT" />
-*            </LinearLayout>
+           </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -174,7 +215,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rounded_button"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="85dp"
+                    android:layout_marginLeft="82dp"
                     android:elevation="2dp"
                     android:translationZ="10dp"
                     android:stateListAnimator="@null"
